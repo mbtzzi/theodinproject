@@ -3,7 +3,7 @@ you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
-  margin: 0;
+  margin: 0px;
   background: #eee;
   font-family: Besley, serif;
 }
@@ -12,14 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-}
-
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height:  48px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
@@ -27,6 +22,45 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin-left: 8px;
+}
+
+
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+  margin:16px
+}
+
+ul {
+  list-style-type: none;
+}
+
+.links {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor1 {
+  width:50%;
+  display:flex;
+  flex-direction: row;
+}
+
+.contenedor2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor3 {
+  width:50%;
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  margin-right: 8px;
 }
 
 button {
@@ -34,15 +68,15 @@ button {
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
-  padding: 8px 24px;
+  padding: 5px 15px;
+  
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height:48px;
+  margin-left: 16px;
 }
