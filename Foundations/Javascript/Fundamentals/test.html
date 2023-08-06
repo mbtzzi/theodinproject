@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Function scope example</title>
-  </head>
+<!-- your HTML file: -->
 <body>
-
-  <script>
-    const x = 1;
-
-    function a() {
-      const y = 2;
-    }
-
-    function b() {
-      const z = 3;
-    }
-
-    function output(value) {
-      const para = document.createElement('p');
-      document.body.appendChild(para);
-      para.textContent = `Value: ${value}`;
-    }
-  </script>
+  <h1>
+    THE TITLE OF YOUR WEBPAGE
+  </h1>
+  <div id="container"></div>
 </body>
-</html>
+
+// your JavaScript file
+const container = document.querySelector('#container');
+
+const content = document.createElement('div');
+content.classList.add('content');
+content.textContent = 'This is the glorious text-content!';
+
+container.appendChild(content);
+
+<!-- The DOM -->
+<body>
+  <h1>
+    THE TITLE OF YOUR WEBPAGE
+  </h1>
+  <div id="container">
+  	<div class="content">
+      This is the glorious text-content!
+    </div>
+  </div>
+</body>
