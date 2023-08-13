@@ -1,0 +1,15 @@
+#div-container {
+    display: grid;
+    width:500px;
+    height:500px;
+    grid-template-columns:repeat(auto-fill,minmax(calc(100%/16),1fr));
+    grid-template-rows:repeat(auto-fill,minmax(calc(100%/16),1fr))
+}
+
+.div-item{
+    border: solid red 3px;
+}
+
+.div-item:hover{
+    background-color: black;
+}   
