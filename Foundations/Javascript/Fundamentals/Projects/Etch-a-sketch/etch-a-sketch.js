@@ -56,3 +56,10 @@ function newSize(){
 const button = document.querySelector('#btn')
 button.addEventListener('click', newSize)
 
+let amIworking
+
+function shouldIChargeMyPhone?{
+    if (amIworking = true){
+        console.
+    }
+}
